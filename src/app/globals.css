@@ -2,32 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+body {
+  cursor: none; /* Membuat kursor standar tidak terlihat */
 }
+/* start text outline transparent */
+.text-outline-transparent {
+  color: transparent;
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+@supports ((text-stroke: 0.8px white) or (-webkit-text-stroke: 0.8px white)) {
+  .text-outline-transparent {
+    color: transparent;
+    -webkit-text-stroke: 0.8px rgb(28, 28, 100);
+    text-shadow: none;
+  }
+}
+/* end text outline transparent */
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-josefin {
+  font-family: "Josefin Sans";
+}
+
+/* start marquee */
+/* .marquee-container {
+  --marquee-width: 100%;
+  --marquee-height: 120px;
+  --marquee-elements: 30;
+  --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee-scroll var(--marquee-animation-duration) ease-in-out infinite;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(calc(-10% * var(--marquee-elements)));
+  }
+} */
+/* end marquee */
