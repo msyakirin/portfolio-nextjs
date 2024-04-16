@@ -7,7 +7,7 @@ export default function Navbar() {
     <div className="fixed shadow-md w-full h-14 bg-white z-10">
       <div className="flex h-full items-center mx-10 justify-between max-md:mx-4">
         <div>
-          <CustomImage src="/img/favicon.ico" />
+          <CustomImage src="/img/favicon.ico" width={35} height={35} className={""} />
         </div>
         <div className="flex gap-10 max-md:hidden">
           <DivNav className="border-b-2">Home</DivNav>

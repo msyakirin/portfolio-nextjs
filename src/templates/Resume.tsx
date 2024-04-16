@@ -15,7 +15,7 @@ export default function Resume() {
               <h1 className="text-xl font-bold my-2">Education</h1>
               <div className="flex">
                 <div className="flex flex-col items-center w-5">
-                  <div className="w-5 h-5 bg-black rounded-full"></div>
+                  <div className="w-5 h-5 bg-white border-2 border-black rounded-full"></div>
                   <div className="h-20 mt-2 bg-black w-0.5"></div>
                 </div>
                 <div className="ms-5">
@@ -25,7 +25,7 @@ export default function Resume() {
               </div>
               <div className="flex mt-2">
                 <div className="flex flex-col items-center w-5">
-                  <div className="w-5 h-5 bg-black rounded-full"></div>
+                  <div className="w-5 h-5 bg-white border-2 border-black rounded-full"></div>
                   <div className="h-20 mt-2 bg-black w-0.5"></div>
                 </div>
                 <div className="ms-5">
@@ -35,7 +35,7 @@ export default function Resume() {
               </div>
               <div className="flex mt-2">
                 <div className="flex flex-col items-center w-5">
-                  <div className="w-5 h-5 bg-black rounded-full"></div>
+                  <div className="w-5 h-5 bg-white border-2 border-black rounded-full"></div>
                   <div className="h-20 mt-2 bg-black w-0.5"></div>
                 </div>
                 <div className="ms-5">
@@ -46,7 +46,7 @@ export default function Resume() {
               </div>
               <div className="flex mt-2">
                 <div className="flex flex-col items-center w-5">
-                  <div className="w-5 h-5 bg-black rounded-full"></div>
+                  <div className="w-5 h-5 bg-white border-2 border-black rounded-full"></div>
                   <div className="h-20 mt-2 bg-black w-0.5"></div>
                 </div>
                 <div className="ms-5">

@@ -1,30 +1,33 @@
 // CustomCursor.tsx
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const CustomCursor: React.FC = () => {
+export default function CustomCursor() {
+  const handleMouseMove = (e: MouseEvent) => {
+    const cursorBallElement = document.querySelector(".cursor-ball") as HTMLDivElement;
+    const cursorOutlineElement = document.querySelector(".cursor-outline") as HTMLDivElement;
+
+    cursorBallElement.style.top = e.pageY + "px";
+    cursorBallElement.style.left = e.pageX + "px";
+
+    cursorOutlineElement.style.top = e.pageY + "px";
+    cursorOutlineElement.style.left = e.pageX + "px";
+  };
+
+  const handleMouseDown = (e: MouseEvent) => {
+    const cursorOutlineElement = document.querySelector(".cursor-outline") as HTMLDivElement;
+
+    if (e.button === 0) {
+      cursorOutlineElement.classList.add("cursor-mousedown");
+    }
+  };
+
+  const handleMouseUp = () => {
+    const cursorOutlineElement = document.querySelector(".cursor-outline") as HTMLDivElement;
+    cursorOutlineElement.classList.remove("cursor-mousedown");
+  };
+
   useEffect(() => {
-    const cursorBall = document.querySelector(".cursor-ball") as HTMLDivElement;
-    const cursorOutline = document.querySelector(".cursor-outline") as HTMLDivElement;
-
-    const handleMouseMove = (e: MouseEvent) => {
-      cursorBall.style.top = e.pageY + "px";
-      cursorBall.style.left = e.pageX + "px";
-
-      cursorOutline.style.top = e.pageY + "px";
-      cursorOutline.style.left = e.pageX + "px";
-    };
-
-    const handleMouseDown = (e: MouseEvent) => {
-      if (e.button === 0) {
-        cursorOutline.classList.add("cursor-mousedown");
-      }
-    };
-
-    const handleMouseUp = () => {
-      cursorOutline.classList.remove("cursor-mousedown");
-    };
-
     document.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mousedown", handleMouseDown);
     document.addEventListener("mouseup", handleMouseUp);
@@ -38,8 +41,8 @@ const CustomCursor: React.FC = () => {
 
   return (
     <>
-      <div className="cursor-ball"></div>
-      <div className="cursor-outline"></div>
+      <div className="cursor-ball max-md:hidden"></div>
+      <div className="cursor-outline  max-md:hidden"></div>
       <style jsx>{`
         .cursor-ball {
           width: 8px;
@@ -70,6 +73,5 @@ const CustomCursor: React.FC = () => {
       `}</style>
     </>
   );
-};
+}
 
-export default CustomCursor;

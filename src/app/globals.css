@@ -7,15 +7,30 @@
     text-wrap: balance;
   }
 } */
-body {
-  cursor: none; /* Membuat kursor standar tidak terlihat */
-}
+
 /* start text outline transparent */
 .text-outline-transparent {
   color: transparent;
   font-size: 35px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+.text-outline-transparent:hover {
+  color: #10b981;
+  animation: textTransparent 0.1s linear;
+  -webkit-text-stroke: 0.8px #10b981;
+
+}
+
+@keyframes textTransparent {
+  from {
+    color: transparent;
+    left: 0;
+  }
+  to {
+    color: #10b981;
+    right: 100%;
+  }
 }
 
 @supports ((text-stroke: 0.8px white) or (-webkit-text-stroke: 0.8px white)) {
