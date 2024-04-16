@@ -9,7 +9,7 @@ export default function About() {
             <h1 className="font-josefin text-3xl">About Me</h1>
           </div>
         </div>
-        <div className="mt-5">Learning is my greatest joy, especially when it comes to coding. I'm constantly seeking new challenges to expand my skills.</div>
+        <div className="mt-5">Learning is my greatest joy, especially when it comes to coding. I&apos;m constantly seeking new challenges to expand my skills.</div>
         <div className="w-full mt-10 ">
           <table className="w-full text-left border-collapse">
             <tbody>
@@ -36,7 +36,7 @@ export default function About() {
             </tbody>
           </table>
           <div className="flex justify-center max-md:block">
-            <Button className="mt-5 hover:bg-yellow-600" children="Download CV" />
+            <Button className="mt-5 hover:bg-yellow-600">Download CV</Button>
           </div>
         </div>
       </div>

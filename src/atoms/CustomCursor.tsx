@@ -2,10 +2,10 @@
 "use client";
 import { useEffect } from "react";
 
-const CustomCursor = () => {
+const CustomCursor: React.FC = () => {
   useEffect(() => {
-    const cursorBall = document.querySelector(".cursor-ball");
-    const cursorOutline = document.querySelector(".cursor-outline");
+    const cursorBall = document.querySelector(".cursor-ball") as HTMLDivElement;
+    const cursorOutline = document.querySelector(".cursor-outline") as HTMLDivElement;
 
     const handleMouseMove = (e: MouseEvent) => {
       cursorBall.style.top = e.pageY + "px";

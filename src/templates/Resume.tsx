@@ -39,7 +39,7 @@ export default function Resume() {
                   <div className="h-20 mt-2 bg-black w-0.5"></div>
                 </div>
                 <div className="ms-5">
-                  <div>SMK Ma'arif NU Doro</div>
+                  <div>SMK Ma&apos;arif NU Doro</div>
                   <div>(2016 - 2019)</div>
                   <div>Computer & Network Engineering</div>
                 </div>
