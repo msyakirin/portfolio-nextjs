@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { ButtonFaAnglesUp } from "./ButtonFontAwesome";
 
 export default function ProgressBar() {
   const [showButton, setShowButton] = useState(false);
@@ -33,8 +34,10 @@ export default function ProgressBar() {
     <div style={{ position: "fixed", right: "0", bottom: "70px", width: "10px", marginRight: "10px" }}>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
         {showButton && (
-          <button onClick={scrollToTop} className="opacity-30" style={{ marginBottom: "90px", cursor: "pointer", display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <div className="-rotate-90 text-nowrap text-sm">To Bottom</div>
+          <button onClick={scrollToTop} className="" style={{ marginBottom: "55px", cursor: "pointer", display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div className="">
+              <ButtonFaAnglesUp className="text-green-500 rotate-180" />
+            </div>
           </button>
         )}
         <div style={{ position: "relative", width: "100px", height: "1px", background: "#f0f0f0", borderRadius: "5px", overflow: "hidden", transform: "rotate(90deg)" }}>
