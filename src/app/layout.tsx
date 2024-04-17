@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={inter.className + " cursor-none max-md:cursor-default"}>
         {children}
         <CustomCursor />
-        <ProgressBar/>
+        <ProgressBar />
       </body>
     </html>
   );

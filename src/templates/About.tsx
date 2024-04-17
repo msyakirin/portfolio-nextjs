@@ -3,7 +3,7 @@ import Button from "@/atoms/Button";
 export default function About() {
   return (
     <div className="min-h-screen w-full max-md:mt-20">
-      <div className="mx-20 text-center max-md:mx-3">
+      <div className="mx-20 text-center max-md:mx-3 max-sm:mx-0">
         <div className="w-full">
           <div className="border-b-2 border-green-500 mx-20 py-2">
             <h1 className="font-josefin text-3xl">About Me</h1>
@@ -37,7 +37,7 @@ export default function About() {
                 </td>
               </tr>
               <tr className="border-b">
-                <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Junior High School</th>
+                <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Islamic Junior High School</th>
                 <td className="p-3">
                   <div>MTs Syarif Hidayah Doro</div>
                   <div>(2013 - 2016)</div>
@@ -52,7 +52,7 @@ export default function About() {
                 </td>
               </tr>
               <tr className="border-b">
-                <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Vocational High School</th>
+                <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">College</th>
                 <td className="p-3">
                   <div>ITS NU Pekalongan</div>
                   <div>(2020 - 2024)</div>
@@ -61,7 +61,7 @@ export default function About() {
               </tr>
             </tbody>
           </table>
-          <div className="flex justify-center max-md:block">
+          <div className="flex justify-center max-md:block max-md:ms-2">
             <Button className="mt-5 hover:bg-yellow-600">Download CV</Button>
           </div>
         </div>

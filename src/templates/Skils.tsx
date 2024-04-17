@@ -2,7 +2,7 @@ import { ButtonFaBootstrap, ButtonFaCss3Alt, ButtonFaHtml5, ButtonFaLaravel, But
 
 export default function Skils() {
   return (
-    <div className="min-h-screen w-full max-md:mt-20">
+    <div className="min-h-screen w-full mt-20">
       <div className="mx-20 text-center max-md:mx-3">
         <div className="w-full">
           <div className="border-b-2 border-green-500 mx-20 py-2">
@@ -91,7 +91,7 @@ export default function Skils() {
 
         {/* Icons Programming Mobile */}
         <div className="hidden max-md:block">
-          <div className="border-b-2 border-green-500 mx-20 py-2">
+          <div className="border-b-2 border-green-500 mx-20 py-2 mt-20">
             <h1 className="text-xl font-bold">Frontend</h1>
           </div>
 
@@ -177,7 +177,7 @@ export default function Skils() {
           </table>
 
           <div className="border-b-2 border-green-500 mx-20 py-2 mt-5">
-            <h1 className="text-xl font-bold">Backend</h1>
+            <h1 className="text-xl font-bold mt-20">Backend</h1>
           </div>
           <table className="w-full text-left border-collapse mt-5">
             <tbody className="font-josefin">
