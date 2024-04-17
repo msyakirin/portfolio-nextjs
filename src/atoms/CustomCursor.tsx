@@ -73,8 +73,8 @@ export default function CustomCursor() {
         }
 
         .cursor-outline {
-          width: 3rem;
-          height: 3rem;
+          width: 2rem;
+          height: 2rem;
           // border: 0.1px solid #000;
           transition: all 0.15s ease;
           border-radius: 50%;

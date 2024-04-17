@@ -1,5 +1,4 @@
 import Button from "@/atoms/Button";
-import CustomImage from "@/atoms/CustomImage";
 
 export default function Home() {
   return (
@@ -10,10 +9,14 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center gap-y-3 max-md:mt-10 ">
           <h1 className="uppercase text-center text-outline-transparent">hello, my name is</h1>
+          
           <div className="capitalize flex items-center text-green-600 text-4xl font-bold font-josefin mb-2">
-           <div className="text-8xl max-lg:text-6xl max-md:text-5xl font-extrabold text-nowrap">m. syakirin</div>
+            <div className="text-8xl max-lg:text-6xl max-md:text-5xl font-extrabold text-nowrap">m. syakirin</div>
           </div>
-          <p className="capitalize text-center"> <span className="lowercase">a</span>nd i&apos;m <span className="lowercase">a</span> web developer</p>
+          <p className="capitalize text-center">
+            {" "}
+            <span className="lowercase">a</span>nd i&apos;m <span className="lowercase">a</span> web developer
+          </p>
           <div>
             <Button className="">Get Connected</Button>
           </div>

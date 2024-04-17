@@ -21,9 +21,9 @@ export default function Footer() {
   return (
     <div>
       <div className="h-20 max-md:mt-20"></div>
-      <footer className="bg-gray-900 text-white py-8 relative ">
+      <footer className="dark-light-mode-footer text-white py-8 relative ">
         <button onClick={handleButtonClick} className="absolute border bg-white rounded-md shadow shadow-green-300 -top-6 left-1/2 transform -translate-x-1/2">
-          <ButtonFaAnglesUp className="animate-bounce text-green-500 px-1 py-1 text-2xl " />
+          <ButtonFaAnglesUp className="animate-bounce text-green-500 px-2 py-1 text-2xl " />
         </button>
         <div className="flex justify-center gap-3 mt-10">
           <a href="#footer" className="icon-wrap">

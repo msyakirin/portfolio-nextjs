@@ -8,40 +8,6 @@
   }
 } */
 
-/* start text outline transparent */
-.text-outline-transparent {
-  color: transparent;
-  font-size: 35px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-}
-.text-outline-transparent:hover {
-  color: #10b981;
-  animation: textTransparent 0.1s linear;
-  -webkit-text-stroke: 0.8px #10b981;
-
-}
-
-@keyframes textTransparent {
-  from {
-    color: transparent;
-    left: 0;
-  }
-  to {
-    color: #10b981;
-    right: 100%;
-  }
-}
-
-@supports ((text-stroke: 0.8px white) or (-webkit-text-stroke: 0.8px white)) {
-  .text-outline-transparent {
-    color: transparent;
-    -webkit-text-stroke: 0.8px rgb(28, 28, 100);
-    text-shadow: none;
-  }
-}
-/* end text outline transparent */
-
 @font-face {
   font-family: "Josefin Sans";
   src: url("/fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype");
@@ -51,27 +17,3 @@
 .font-josefin {
   font-family: "Josefin Sans";
 }
-
-/* start marquee */
-/* .marquee-container {
-  --marquee-width: 100%;
-  --marquee-height: 120px;
-  --marquee-elements: 30;
-  --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
-  overflow: hidden;
-}
-
-.marquee-content {
-  display: flex;
-  animation: marquee-scroll var(--marquee-animation-duration) ease-in-out infinite;
-}
-
-@keyframes marquee-scroll {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(calc(-10% * var(--marquee-elements)));
-  }
-} */
-/* end marquee */

@@ -41,7 +41,7 @@ export default function ProgressBar() {
           </button>
         )}
         <div style={{ position: "relative", width: "100px", height: "1px", background: "#f0f0f0", borderRadius: "5px", overflow: "hidden", transform: "rotate(90deg)" }}>
-          <div style={{ width: `${scrollProgress}%`, height: "100%", background: "#4caf50", transition: "width 0.3s ease" }} />
+          <div style={{ width: `${scrollProgress}%`, height: "100%", transition: "width 0.3s ease" }} className="dark-light-mode-progress-bar" />
         </div>
       </div>
     </div>
