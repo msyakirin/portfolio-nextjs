@@ -2,7 +2,7 @@ import { ButtonFaBootstrap, ButtonFaCss3Alt, ButtonFaHtml5, ButtonFaLaravel, But
 
 export default function Skils() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full max-md:mt-20">
       <div className="mx-20 text-center max-md:mx-3">
         <div className="w-full">
           <div className="border-b-2 border-green-500 mx-20 py-2">

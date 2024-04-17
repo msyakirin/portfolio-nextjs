@@ -138,8 +138,8 @@ export default function CustomCursor() {
 
   return (
     <>
-      <div className={`cursor-ball ${isScrolling ? "hidden" : ""}`}></div>
-      <div className={`cursor-outline ${isScrolling ? "hidden" : ""}`}></div>
+      <div className={`cursor-ball ${isScrolling ? "hidden" : ""} max-md:hidden`}></div>
+      <div className={`cursor-outline ${isScrolling ? "hidden" : ""} max-md:hidden`}></div>
       <style jsx>{`
         .cursor-ball {
           position: fixed;
