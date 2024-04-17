@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { ButtonFaCaretUp } from "./ButtonFontAwesome";
 
 export default function ProgressBar() {
   const [showButton, setShowButton] = useState(false);
@@ -27,15 +26,15 @@ export default function ProgressBar() {
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
   };
 
   return (
-    <div style={{ position: "fixed", right: "0", bottom: "70px", zIndex: 999, width: "10px", marginRight: "10px" }}>
+    <div style={{ position: "fixed", right: "0", bottom: "70px", width: "10px", marginRight: "10px" }}>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
         {showButton && (
-          <button onClick={scrollToTop} className="opacity-30" style={{ marginBottom: "55px", cursor: "pointer", display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <ButtonFaCaretUp className={"text-xl rounded-full border border-black w-8 max-md:border-none text-green-500 opacity-60"}></ButtonFaCaretUp>
+          <button onClick={scrollToTop} className="opacity-30" style={{ marginBottom: "90px", cursor: "pointer", display: "flex", justifyContent: "center", alignItems: "center" }}>
+           <div className="-rotate-90 text-nowrap text-sm">To Bottom</div>
           </button>
         )}
         <div style={{ position: "relative", width: "100px", height: "1px", background: "#f0f0f0", borderRadius: "5px", overflow: "hidden", transform: "rotate(90deg)" }}>

@@ -18,10 +18,6 @@ export default function About() {
                 <td className="p-3">M. Syakirin</td>
               </tr>
               <tr className="border-b">
-                <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Age</th>
-                <td className="p-3">{new Date().getFullYear() - 2001}</td>
-              </tr>
-              <tr className="border-b">
                 <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Address</th>
                 <td className="p-3">Pekalongan</td>
               </tr>
@@ -32,6 +28,36 @@ export default function About() {
               <tr className="border-b">
                 <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Phone</th>
                 <td className="p-3">082225379187</td>
+              </tr>
+              <tr className="border-b">
+                <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Elementary School</th>
+                <td className="p-3">
+                  <div>SD Negri 01 Dororejo</div>
+                  <div>(2007 - 2013)</div>
+                </td>
+              </tr>
+              <tr className="border-b">
+                <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Junior High School</th>
+                <td className="p-3">
+                  <div>MTs Syarif Hidayah Doro</div>
+                  <div>(2013 - 2016)</div>
+                </td>
+              </tr>
+              <tr className="border-b">
+                <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Vocational High School</th>
+                <td className="p-3">
+                  <div>SMK Ma&apos;arif NU Doro</div>
+                  <div>(2016 - 2019)</div>
+                  <div>Computer & Network Engineering</div>
+                </td>
+              </tr>
+              <tr className="border-b">
+                <th className="p-3 ps-64 max-md:ps-3 max-lg:ps-32">Vocational High School</th>
+                <td className="p-3">
+                  <div>ITS NU Pekalongan</div>
+                  <div>(2020 - 2024)</div>
+                  <div>Information Technology</div>
+                </td>
               </tr>
             </tbody>
           </table>

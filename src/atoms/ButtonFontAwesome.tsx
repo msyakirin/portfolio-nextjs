@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretUp, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { faHtml5, faCss3Alt, faBootstrap, faReact, faLaravel } from "@fortawesome/free-brands-svg-icons";
+import { faAnglesUp, faCaretUp, faEnvelope, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faHtml5, faCss3Alt, faBootstrap, faReact, faLaravel,  faLinkedin, faFacebook, faInstagram, } from "@fortawesome/free-brands-svg-icons";
 
 export function ButtonFaMoon({ className }: { className: string }) {
   return (
@@ -70,6 +70,56 @@ export function ButtonFaCaretUp({ className }: { className: string }) {
     <div className={className}>
       <div>
         <FontAwesomeIcon icon={faCaretUp} />
+      </div>
+    </div>
+  );
+}
+
+export function ButtonFaAnglesUp({ className }: { className: string }) {
+  return (
+    <div className={className}>
+      <div>
+        <FontAwesomeIcon icon={faAnglesUp} />
+      </div>
+    </div>
+  );
+}
+
+export function ButtonFaLinkedin({ className }: { className: string }) {
+  return (
+    <div className={className}>
+      <div>
+        <FontAwesomeIcon icon={faLinkedin} />
+      </div>
+    </div>
+  );
+}
+
+export function ButtonFaFacebook({ className }: { className: string }) {
+  return (
+    <div className={className}>
+      <div>
+        <FontAwesomeIcon icon={faFacebook} />
+      </div>
+    </div>
+  );
+}
+
+export function ButtonFaInstagram({ className }: { className: string }) {
+  return (
+    <div className={className}>
+      <div>
+        <FontAwesomeIcon icon={faInstagram} />
+      </div>
+    </div>
+  );
+}
+
+export function ButtonFaEnvelope({ className }: { className: string }) {
+  return (
+    <div className={className}>
+      <div>
+        <FontAwesomeIcon icon={faEnvelope} />
       </div>
     </div>
   );

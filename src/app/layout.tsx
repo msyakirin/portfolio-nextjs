@@ -26,9 +26,9 @@ export default function RootLayout({
         <link rel="icon" href="/img/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className + " cursor-none max-md:cursor-default"}>
-        <CustomCursor />
         {children}
-        <ProgressBar />
+        <CustomCursor />
+        <ProgressBar/>
       </body>
     </html>
   );
