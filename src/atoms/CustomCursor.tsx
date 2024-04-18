@@ -64,7 +64,6 @@ export default function CustomCursor() {
           position: fixed;
           width: 8px;
           height: 8px;
-          background-color: #000;
           border-radius: 50%;
           position: absolute;
           z-index: 100;
@@ -75,7 +74,6 @@ export default function CustomCursor() {
         .cursor-outline {
           width: 2rem;
           height: 2rem;
-          // border: 0.1px solid #000;
           transition: all 0.15s ease;
           border-radius: 50%;
           position: absolute;

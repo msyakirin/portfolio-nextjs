@@ -6,10 +6,10 @@ export default function Loading() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setLoading(false); // Setelah beberapa waktu, nonaktifkan loading
-    }, 2000); // Waktu dalam milidetik sebelum loading nonaktif
+      setLoading(false);
+    }, 2000);
 
-    return () => clearTimeout(timeout); // Membersihkan timeout saat komponen dilepas
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
@@ -18,6 +18,7 @@ export default function Loading() {
       <style jsx>
         {`
           .loadingContainer {
+            background-color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,37 +26,25 @@ export default function Loading() {
             position: relative;
             overflow: hidden;
           }
-
           .verticalLine {
-            width: 2px;
-            height: 60%;
-            background-color: #333; /* Warna garis vertikal */
-            position: absolute;
-            bottom: 0;
-            left: 50%; /* Posisi di tengah secara horizontal */
-            top: 20%; /* Posisi di tengah sekitar 60% dari tinggi */
-            transform: translateX(-50%);
-            animation: bounceVertical 1s ease-in-out infinite; /* Animasi garis vertikal */
+            height: 50px;
+            aspect-ratio: 2;
+            border: 10px solid #000;
+            box-sizing: border-box;
+            background: radial-gradient(farthest-side, #fff 98%, #0000) left/20px 20px, radial-gradient(farthest-side, #fff 98%, #0000) left/20px 20px, radial-gradient(farthest-side, #fff 98%, #0000) center/20px 20px,
+              radial-gradient(farthest-side, #fff 98%, #0000) right/20px 20px, #000;
+            background-repeat: no-repeat;
+            filter: blur(4px) contrast(10);
+            animation: l14 1s infinite;
           }
-
-          @keyframes bounceVertical {
-            0% {
-              height: 50%;
-              top: 50%;
-            }
-            50% {
-             height: 0%; /* Puncak animasi, tinggi mencapai 100% */
-             top: 0%;
-           }
+          @keyframes l14 {
             100% {
-              height: 50%; /* Mulai dan akhir dengan tinggi 0 */
-              top: 50%;
-
+              background-position: right, left, center, right;
             }
-           
           }
         `}
       </style>
     </div>
   );
 }
+/* HTML: <div class="loader"></div> */
