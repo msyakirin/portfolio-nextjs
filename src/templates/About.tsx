@@ -1,4 +1,5 @@
 import Button from "@/atoms/Button";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -61,9 +62,11 @@ export default function About() {
               </tr>
             </tbody>
           </table>
-          <div className="flex justify-center max-md:block max-md:ms-2">
-            <Button className="mt-5 hover:bg-yellow-600">Download CV</Button>
-          </div>
+          <Link href="/cv">
+            <div className="flex justify-center max-md:block max-md:ms-2">
+              <Button className="mt-5 hover:bg-yellow-600">Download CV</Button>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

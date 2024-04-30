@@ -1,5 +1,5 @@
 "use client";
-import { ButtonFaAnglesUp, ButtonFaEnvelope, ButtonFaFacebook, ButtonFaInstagram, ButtonFaLinkedin } from "@/atoms/ButtonFontAwesome";
+import { ButtonFaAnglesUp, ButtonFaEnvelope, ButtonFaInstagram, ButtonFaLinkedin, ButtonFaWhatsapp } from "@/atoms/ButtonFontAwesome";
 import { useState } from "react";
 
 export default function Footer() {
@@ -26,22 +26,22 @@ export default function Footer() {
           <ButtonFaAnglesUp className="animate-bounce text-green-500 px-2 py-1 text-2xl " />
         </button>
         <div className="flex justify-center gap-3 mt-10">
-          <a href="#footer" className="icon-wrap">
+          <a href="https://www.linkedin.com/in/m-syakirin-96b23926a" className="icon-wrap">
             <div className="flex justify-center items-center w-12 h-12 rounded-md bg-blue-600 hover:bg-blue-700">
               <ButtonFaLinkedin className="text-white text-3xl" />
             </div>
           </a>
-          <a href="#footer" className="icon-wrap">
-            <div className="flex justify-center items-center w-12 h-12 rounded-md bg-blue-500 hover:bg-blue-600">
-              <ButtonFaFacebook className="text-white text-3xl" />
+          <a href="https://wa.me/+6282225379187" className="icon-wrap">
+            <div className="flex justify-center items-center w-12 h-12 rounded-md bg-green-600 hover:bg-green-700">
+              <ButtonFaWhatsapp className="text-white text-3xl" />
             </div>
           </a>
-          <a href="#footer" className="icon-wrap">
+          <a href="https://www.instagram.com/msyakirin999" className="icon-wrap">
             <div className="flex justify-center items-center w-12 h-12 rounded-md bg-pink-600 hover:bg-pink-700">
               <ButtonFaInstagram className="text-white text-3xl" />
             </div>
           </a>
-          <a href="#footer" className="icon-wrap">
+          <a href="mailto:msyakirinnn@gmail.com" className="icon-wrap">
             <div className="flex justify-center items-center w-12 h-12 rounded-md bg-red-600 hover:bg-red-700">
               <ButtonFaEnvelope className="text-white text-3xl" />
             </div>

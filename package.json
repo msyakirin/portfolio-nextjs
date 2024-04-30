@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "move-static": "cp -a ./node_modules/@pdftron/webviewer/public/. ./dist/public/webviewer",
+    "build": "mybuildscript && npm run move-static"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -16,7 +17,9 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/pdfjs-dist": "^2.10.378",
     "next": "14.2.1",
+    "pdfjs-dist": "^4.2.67",
     "react": "^18",
     "react-dom": "^18"
   },

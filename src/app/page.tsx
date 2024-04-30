@@ -3,23 +3,32 @@ import HomePage from "@/pages/HomePage";
 import Loading from "@/templates/Loading";
 import { useEffect, useState } from "react";
 
-export default function Home() {
+const useLoadingStatus = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    const storedStatus = sessionStorage.getItem('loadingStatus');
+    if (storedStatus && storedStatus === 'false') {
       setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timeout);
+    } else {
+      const timeout = setTimeout(() => {
+        setLoading(false);
+        sessionStorage.setItem('loadingStatus', 'false');
+      }, 2000);
+  
+      return () => clearTimeout(timeout);
+    }
   }, []);
+
+  return loading;
+};
+
+export default function Home() {
+  const loading = useLoadingStatus();
 
   return (
     <main>
-      <div>
-        {loading && <Loading />}
-        {!loading && <HomePage />}
-      </div>
+      <div>{loading ? <Loading /> : <HomePage />}</div>
     </main>
   );
 }

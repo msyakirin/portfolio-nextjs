@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp, faCaretUp, faEnvelope, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { faHtml5, faCss3Alt, faBootstrap, faReact, faLaravel,  faLinkedin, faFacebook, faInstagram, } from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faCss3Alt, faBootstrap, faReact, faLaravel,  faLinkedin, faWhatsapp, faInstagram, } from "@fortawesome/free-brands-svg-icons";
 
 export function ButtonFaMoon({ className }: { className: string }) {
   return (
@@ -95,11 +95,11 @@ export function ButtonFaLinkedin({ className }: { className: string }) {
   );
 }
 
-export function ButtonFaFacebook({ className }: { className: string }) {
+export function ButtonFaWhatsapp({ className }: { className: string }) {
   return (
     <div className={className}>
       <div>
-        <FontAwesomeIcon icon={faFacebook} />
+        <FontAwesomeIcon icon={faWhatsapp} />
       </div>
     </div>
   );

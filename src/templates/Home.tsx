@@ -16,11 +16,12 @@ export default function Home() {
             <div className="text-8xl max-lg:text-6xl max-md:text-5xl font-extrabold text-nowrap">m. syakirin</div>
           </div>
           <p className="capitalize text-center">
-            {" "}
             <span className="lowercase">a</span>nd i&apos;m <span className="lowercase">a</span> web developer
           </p>
           <div>
-            <Button className="">Get Connected</Button>
+            <Button className="">
+              <a href="https://wa.me/+6282225379187">Get Connected</a>
+            </Button>
           </div>
         </div>
       </div>
