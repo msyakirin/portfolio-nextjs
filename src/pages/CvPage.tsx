@@ -2,7 +2,6 @@
 import { useRouter } from "next/router";
 import PdfViewerComponent from "../atoms/PdfViewerComponent";
 import Link from "next/link";
-// CvPage.tsx
 
 const CvPage: React.FC = () => {
   const pdfFileURL = "CV-M. Syakirin.pdf"; // Ganti dengan URL atau path PDF Anda
