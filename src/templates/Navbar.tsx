@@ -2,7 +2,8 @@
 import DivNav from "@/atoms/DivNav";
 import { ButtonFaMoon, ButtonFaSun } from "../atoms/ButtonFontAwesome";
 import CustomImage from "@/atoms/CustomImage";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,19 +18,24 @@ export default function Navbar() {
     setDarkMode(newMode);
     localStorage.setItem("darkMode", newMode.toString());
   };
+
   return (
     <>
       <div className="fixed shadow-md w-full h-14 border-b border-[#535353] z-10 dark-light-mode">
-        <div className="flex h-full items-center mx-10 justify-between max-md:mx-4">
-          <div>
-            <CustomImage src="/img/favicon.ico" width={35} height={35} className={""} />
+        <div className="flex h-full items-center mx-10 justify-between max-md:mx-0">
+          <div className="max-md:ms-4">
+            <CustomImage src="/img/favicon.ico" width={35} height={35} className="" />
           </div>
-          <div className="flex gap-10 max-md:hidden">
-            <DivNav className="border-b-2">Home</DivNav>
-            <DivNav className="">About</DivNav>
-            <DivNav className="">Skils</DivNav>
-            <DivNav className="">Resume</DivNav>
-            <DivNav className="">Contact</DivNav>
+          <div className={`flex gap-10 ${isOpen ? "max-md:fixed max-md:grid max-md:mt-56 max-md:bg-white max-md:w-full max-md:py-3 max-md:shadow-md max-md:border-b max-md:border-[#535353]" : "max-md:hidden"}`}>
+            <Link to="home" spy={true} smooth={true} duration={500} className="nav-link max-md:ms-4" activeClass="border-b-2">
+              Home
+            </Link>
+            <Link to="about" spy={true} smooth={true} duration={500} className="nav-link max-md:ms-4" activeClass="border-b-2">
+              About
+            </Link>
+            <Link to="skills" spy={true} smooth={true} duration={500} className="nav-link max-md:ms-4" activeClass="border-b-2">
+              Skills
+            </Link>
           </div>
 
           <div className="flex justify-center items-center gap-4">
@@ -37,6 +43,7 @@ export default function Navbar() {
               <ButtonFaMoon className={darkMode ? "hidden" : "text-2xl w-full h-full flex justify-center items-center"} />
               <ButtonFaSun className={darkMode ? "text-2xl w-full h-full flex justify-center items-center" : "hidden"} />
             </div>
+
             <div className="hidden max-md:block">
               <button onClick={toggleNavbar} className="items-center justify-center p-2 rounded-md focus:outline-none dark-light-mode-open-menu" aria-expanded={isOpen ? "true" : "false"}>
                 {/* Icon for the toggle button */}

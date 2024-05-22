@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="min-h-screen w-full max-md:mt-20">
+    <div className="min-h-screen w-full max-md:mt-20" id="about">
       <div className="mx-20 text-center max-md:mx-3 max-sm:mx-0">
         <div className="w-full">
           <div className="border-b-2 border-green-500 mx-20 py-2">

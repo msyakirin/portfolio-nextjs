@@ -2,7 +2,7 @@ import Button from "@/atoms/Button";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen flex items-center">
+    <div className="w-full min-h-screen flex items-center" id="home">
       <div className="w-full flex flex-row-reverse items-center justify-between mx-72 max-xl:mx-20 max-lg:mx-10 max-md:block max-md:mx-5">
         <div className="flex justify-center items-center ms-20 max-lg:ms-10 max-md:ms-0 max-md:mt-16">
           <div className="bg-gray-300 h-64 w-64 rounded-full border-red-500 border-2 overflow-hidden">
