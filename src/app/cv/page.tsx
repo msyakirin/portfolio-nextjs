@@ -6,7 +6,6 @@ import Link from "next/link";
 export default function cv() {
   return (
     <div>
-      <Navbar />
       <CvPage />
       <Footer />
     </div>
