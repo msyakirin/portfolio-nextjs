@@ -26,7 +26,7 @@ export default function Navbar() {
           <div className="max-md:ms-4">
             <CustomImage src="/img/favicon.ico" width={35} height={35} className="" />
           </div>
-          <div className={`flex gap-10 ${isOpen ? "max-md:fixed max-md:grid max-md:mt-56 max-md:bg-white max-md:w-full max-md:py-3 max-md:shadow-md max-md:border-b max-md:border-[#535353]" : "max-md:hidden"}`}>
+          <div className={`dark-light-mode flex gap-10 ${isOpen ? "max-md:fixed max-md:grid max-md:mt-56 max-md:w-full max-md:py-3 max-md:shadow-md max-md:border-b max-md:border-[#535353]" : "max-md:hidden"}`}>
             <Link to="home" spy={true} smooth={true} duration={500} className="nav-link max-md:ms-4" activeClass="border-b-2">
               Home
             </Link>
