@@ -2,6 +2,13 @@ import Button from "@/atoms/Button";
 import Link from "next/link";
 
 export default function About() {
+  const pdfFileURL = "CV-M. Syakirin.pdf"; // Ganti dengan URL atau path PDF Anda
+
+  const handleDownload = () => {
+    // Navigasi langsung ke file PDF untuk mengunduh
+    window.open(pdfFileURL, "_blank");
+  };
+
   return (
     <div className="min-h-screen w-full max-md:mt-20" id="about">
       <div className="mx-20 text-center max-md:mx-3 max-sm:mx-0">
@@ -62,11 +69,11 @@ export default function About() {
               </tr>
             </tbody>
           </table>
-          <Link href="/cv">
-            <div className="flex justify-center max-md:block max-md:ms-2">
-              <Button className="mt-5 hover:bg-yellow-600">Download CV</Button>
-            </div>
-          </Link>
+          <div onClick={handleDownload} className="flex justify-center max-md:block max-md:ms-2">
+            <Button className="mt-5 hover:bg-yellow-600">
+              Download CV
+            </Button>
+          </div>
         </div>
       </div>
     </div>
