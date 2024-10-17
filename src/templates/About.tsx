@@ -2,7 +2,7 @@ import Button from "@/atoms/Button";
 import Link from "next/link";
 
 export default function About() {
-  const pdfFileURL = "CV-M. Syakirin.pdf"; // Ganti dengan URL atau path PDF Anda
+  const pdfFileURL = "CV-M.Syakirin.pdf"; // Ganti dengan URL atau path PDF Anda
 
   const handleDownload = () => {
     // Navigasi langsung ke file PDF untuk mengunduh
